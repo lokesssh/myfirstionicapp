@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {FirstpagePage} from "../pages/firstpage/firstpage";
 import {LoginPage} from "../pages/login/login";
 import {AccountPage} from "../pages/account/account";
+import { DatafetchProvider } from '../providers/datafetch/datafetch';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import {AccountPage} from "../pages/account/account";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DatafetchProvider
   ]
 })
 export class AppModule {}
