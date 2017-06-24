@@ -14,6 +14,7 @@ import {FirstpagePage} from "../pages/firstpage/firstpage";
 import {LoginPage} from "../pages/login/login";
 import {AccountPage} from "../pages/account/account";
 import { DatafetchProvider } from '../providers/datafetch/datafetch';
+import {HttpModule} from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -27,11 +28,12 @@ import { DatafetchProvider } from '../providers/datafetch/datafetch';
 
     FirstpagePage,
     LoginPage,
-    AccountPage
+    AccountPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

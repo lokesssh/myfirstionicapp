@@ -17,8 +17,7 @@ export class HomePage {
   student_year:string;
   student_batch:string;
   comment:any=["ab","cd","de"];
-  students:any=[{"name":"ab","batch":"2014","year":"second"},{"name":"cd","batch":"2013","year":"third"},
-    {"name":"erf","batch":"2012","year":"fourth"}];
+  students:any;
   constructor(public navCtrl: NavController,public alertctrl:AlertController) {
 
   }
